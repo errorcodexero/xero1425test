@@ -3,7 +3,7 @@ package org.xero1425.base.utils;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.wpi.first.wpilibj.geometry.Translation2d;
+import edu.wpi.first.math.geometry.Translation2d;
 import org.junit.Assert;
 
 public class LineSegmentUnitTest {

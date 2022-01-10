@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.*;
 
-import edu.wpi.first.wpilibj.geometry.Translation2d;
+import edu.wpi.first.math.geometry.Translation2d;
 
 public class PieceWiseLinearTest {
     @Before
