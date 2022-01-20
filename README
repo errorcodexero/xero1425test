@@ -6,5 +6,5 @@ mkdir -p src/test/java
 cd src/test/java
 mkdir org
 cd org
-git submodule add https://github.com/errorcodexero/xero1425test.git xero1425
+git submodule add -b main https://github.com/errorcodexero/xero1425test.git xero1425
 git commit -a -m "added test repo to robot code"
