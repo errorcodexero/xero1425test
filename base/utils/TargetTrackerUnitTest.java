@@ -44,7 +44,7 @@ public class TargetTrackerUnitTest {
     */
 
     @Test
-    public void testTargetTrackerMainCardinalFour() throws Exception {
+    public void testTargetTrackerCardinalFour() throws Exception {
         
         TargetTracker tt = new TargetTracker(new Translation2d(324, 162)) ;
 
@@ -95,28 +95,44 @@ public class TargetTrackerUnitTest {
         TargetTracker tt = new TargetTracker(new Translation2d(324, 162)) ;
       
         // bottom left
-         // Assert.assertEquals(26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-63.7349, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(Math.PI/2))), 0.0001) ;
-        // Assert.assertEquals(26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(Math.PI))), 0.0001) ;
-        // Assert.assertEquals(26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(3*Math.PI/2))), 0.0001) ;
-      
-        // top right 
-         // Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(0))), 0.0001) ;
-      
-        // top left
-         // Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(-63.4349, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(Math.PI))), 0.0001) ;
+        Assert.assertEquals(116.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(3*Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(-18.4349, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-108.4349, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(3*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(161.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(5*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(71.5651, tt.getRelativeTargetAngle(new Pose2d(0, 0, new Rotation2d(7*Math.PI/4))), 0.0001) ;
       
         // bottom right
-         // Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(0))), 0.0001) ;
-        // Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(63.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(Math.PI))), 0.0001) ;
+        Assert.assertEquals(-116.5651, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(3*Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(108.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(18.4349, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(3*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-71.5651, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(5*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-161.5651, tt.getRelativeTargetAngle(new Pose2d(648, 0, new Rotation2d(7*Math.PI/4))), 0.0001) ;
+
+        // top right 
+        Assert.assertEquals(-153.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(116.5651, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(26.5651, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(Math.PI))), 0.0001) ;
+        Assert.assertEquals(-63.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(3*Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(161.5651, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(71.5651, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(3*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-18.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(5*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-108.4349, tt.getRelativeTargetAngle(new Pose2d(648, 324, new Rotation2d(7*Math.PI/4))), 0.0001) ;
+      
+        // top left
+        Assert.assertEquals(-26.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(0))), 0.0001) ;
+        Assert.assertEquals(-116.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(153.4349, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(Math.PI))), 0.0001) ;
+        Assert.assertEquals(63.4349, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(3*Math.PI/2))), 0.0001) ;
+        Assert.assertEquals(-71.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(-161.5651, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(3*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(108.4349, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(5*Math.PI/4))), 0.0001) ;
+        Assert.assertEquals(18.4349, tt.getRelativeTargetAngle(new Pose2d(0, 324, new Rotation2d(7*Math.PI/4))), 0.0001) ;  
     
     }
 
