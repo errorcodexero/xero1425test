@@ -30,7 +30,10 @@ public class TargetTrackerUnitTest {
         Assert.assertEquals(70.7106781187, tt.getRelativeTargetDistance(new Pose2d(0, 50, new Rotation2d(2*Math.PI))), 0.0001) ;
     }
 
-    //add 64 tests - for 8 "cardinal" positions around field * the 8 "cardinal" directions possible at each position.
+    // TODO add test cases for turret offset... 
+
+
+    // 64 tests - for 8 "cardinal" positions around field * the 8 "cardinal" directions possible at each position.
         // For each of these eight positions' unit tests, then have the robot heading be 0, 90, 180, -90, 45, 135, -135, and -45.
 
 
